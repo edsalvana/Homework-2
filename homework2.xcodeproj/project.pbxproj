@@ -19,6 +19,18 @@
 		DEA450B418BAD724001BEC81 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA4509C18BAD724001BEC81 /* UIKit.framework */; };
 		DEA450BC18BAD724001BEC81 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DEA450BA18BAD724001BEC81 /* InfoPlist.strings */; };
 		DEA450BE18BAD724001BEC81 /* homework2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA450BD18BAD724001BEC81 /* homework2Tests.m */; };
+		DEA450C918BAD7FC001BEC81 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA450C818BAD7FC001BEC81 /* TableViewController.m */; };
+		DEA450CC18BAD909001BEC81 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA450CB18BAD909001BEC81 /* CustomCell.m */; };
+		DEA450CE18BAD91B001BEC81 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEA450CD18BAD91B001BEC81 /* CustomCell.xib */; };
+		DEA450D318BAE2E4001BEC81 /* profileImage2.png in Resources */ = {isa = PBXBuildFile; fileRef = DEA450D018BAE2E4001BEC81 /* profileImage2.png */; };
+		DEA450D418BAE2E4001BEC81 /* profileImage3.png in Resources */ = {isa = PBXBuildFile; fileRef = DEA450D118BAE2E4001BEC81 /* profileImage3.png */; };
+		DEA450D918BAE5F7001BEC81 /* NotificationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA450D818BAE5F7001BEC81 /* NotificationModel.m */; };
+		DEA450DB18BAF6A4001BEC81 /* icon-comment-16px@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DEA450DA18BAF6A4001BEC81 /* icon-comment-16px@2x.png */; };
+		DEA450DD18BAF6C9001BEC81 /* icon-like-16px@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DEA450DC18BAF6C9001BEC81 /* icon-like-16px@2x.png */; };
+		DEA450DF18BAF6DF001BEC81 /* icon-group-sunglasses-16px@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DEA450DE18BAF6DF001BEC81 /* icon-group-sunglasses-16px@2x.png */; };
+		DEA450E118BAFC28001BEC81 /* profileImage1.png in Resources */ = {isa = PBXBuildFile; fileRef = DEA450E018BAFC28001BEC81 /* profileImage1.png */; };
+		DEA450E318BB1B81001BEC81 /* profileImage4.png in Resources */ = {isa = PBXBuildFile; fileRef = DEA450E218BB1B81001BEC81 /* profileImage4.png */; };
+		DEA450E518BB1C59001BEC81 /* profileImage5.png in Resources */ = {isa = PBXBuildFile; fileRef = DEA450E418BB1C58001BEC81 /* profileImage5.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +60,21 @@
 		DEA450B918BAD724001BEC81 /* homework2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "homework2Tests-Info.plist"; sourceTree = "<group>"; };
 		DEA450BB18BAD724001BEC81 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DEA450BD18BAD724001BEC81 /* homework2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = homework2Tests.m; sourceTree = "<group>"; };
+		DEA450C718BAD7FC001BEC81 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		DEA450C818BAD7FC001BEC81 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		DEA450CA18BAD909001BEC81 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		DEA450CB18BAD909001BEC81 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+		DEA450CD18BAD91B001BEC81 /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		DEA450D018BAE2E4001BEC81 /* profileImage2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profileImage2.png; sourceTree = "<group>"; };
+		DEA450D118BAE2E4001BEC81 /* profileImage3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profileImage3.png; sourceTree = "<group>"; };
+		DEA450D718BAE5F7001BEC81 /* NotificationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationModel.h; sourceTree = "<group>"; };
+		DEA450D818BAE5F7001BEC81 /* NotificationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationModel.m; sourceTree = "<group>"; };
+		DEA450DA18BAF6A4001BEC81 /* icon-comment-16px@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-comment-16px@2x.png"; sourceTree = "<group>"; };
+		DEA450DC18BAF6C9001BEC81 /* icon-like-16px@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-like-16px@2x.png"; sourceTree = "<group>"; };
+		DEA450DE18BAF6DF001BEC81 /* icon-group-sunglasses-16px@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-group-sunglasses-16px@2x.png"; sourceTree = "<group>"; };
+		DEA450E018BAFC28001BEC81 /* profileImage1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profileImage1.png; sourceTree = "<group>"; };
+		DEA450E218BB1B81001BEC81 /* profileImage4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profileImage4.png; sourceTree = "<group>"; };
+		DEA450E418BB1C58001BEC81 /* profileImage5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profileImage5.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,10 +134,17 @@
 		DEA4509E18BAD724001BEC81 /* homework2 */ = {
 			isa = PBXGroup;
 			children = (
+				DEA450D618BAE598001BEC81 /* Models */,
+				DEA450D518BAE2F5001BEC81 /* Images */,
 				DEA450A718BAD724001BEC81 /* AppDelegate.h */,
 				DEA450A818BAD724001BEC81 /* AppDelegate.m */,
 				DEA450AA18BAD724001BEC81 /* Images.xcassets */,
 				DEA4509F18BAD724001BEC81 /* Supporting Files */,
+				DEA450C718BAD7FC001BEC81 /* TableViewController.h */,
+				DEA450C818BAD7FC001BEC81 /* TableViewController.m */,
+				DEA450CA18BAD909001BEC81 /* CustomCell.h */,
+				DEA450CB18BAD909001BEC81 /* CustomCell.m */,
+				DEA450CD18BAD91B001BEC81 /* CustomCell.xib */,
 			);
 			path = homework2;
 			sourceTree = "<group>";
@@ -142,6 +176,30 @@
 				DEA450BA18BAD724001BEC81 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DEA450D518BAE2F5001BEC81 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				DEA450E218BB1B81001BEC81 /* profileImage4.png */,
+				DEA450E418BB1C58001BEC81 /* profileImage5.png */,
+				DEA450DE18BAF6DF001BEC81 /* icon-group-sunglasses-16px@2x.png */,
+				DEA450DC18BAF6C9001BEC81 /* icon-like-16px@2x.png */,
+				DEA450DA18BAF6A4001BEC81 /* icon-comment-16px@2x.png */,
+				DEA450E018BAFC28001BEC81 /* profileImage1.png */,
+				DEA450D018BAE2E4001BEC81 /* profileImage2.png */,
+				DEA450D118BAE2E4001BEC81 /* profileImage3.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		DEA450D618BAE598001BEC81 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DEA450D718BAE5F7001BEC81 /* NotificationModel.h */,
+				DEA450D818BAE5F7001BEC81 /* NotificationModel.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,8 +277,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEA450E318BB1B81001BEC81 /* profileImage4.png in Resources */,
+				DEA450DF18BAF6DF001BEC81 /* icon-group-sunglasses-16px@2x.png in Resources */,
+				DEA450CE18BAD91B001BEC81 /* CustomCell.xib in Resources */,
+				DEA450DD18BAF6C9001BEC81 /* icon-like-16px@2x.png in Resources */,
+				DEA450D418BAE2E4001BEC81 /* profileImage3.png in Resources */,
+				DEA450E118BAFC28001BEC81 /* profileImage1.png in Resources */,
 				DEA450A318BAD724001BEC81 /* InfoPlist.strings in Resources */,
+				DEA450DB18BAF6A4001BEC81 /* icon-comment-16px@2x.png in Resources */,
+				DEA450E518BB1C59001BEC81 /* profileImage5.png in Resources */,
 				DEA450AB18BAD724001BEC81 /* Images.xcassets in Resources */,
+				DEA450D318BAE2E4001BEC81 /* profileImage2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +307,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEA450A918BAD724001BEC81 /* AppDelegate.m in Sources */,
+				DEA450C918BAD7FC001BEC81 /* TableViewController.m in Sources */,
+				DEA450D918BAE5F7001BEC81 /* NotificationModel.m in Sources */,
+				DEA450CC18BAD909001BEC81 /* CustomCell.m in Sources */,
 				DEA450A518BAD724001BEC81 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -441,6 +511,7 @@
 				DEA450C318BAD724001BEC81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DEA450C418BAD724001BEC81 /* Build configuration list for PBXNativeTarget "homework2Tests" */ = {
 			isa = XCConfigurationList;
@@ -449,6 +520,7 @@
 				DEA450C618BAD724001BEC81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
