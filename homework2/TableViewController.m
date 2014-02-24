@@ -13,6 +13,13 @@
 @interface TableViewController ()
 @property(nonatomic, assign) int cellHeight;
 @property (strong, nonatomic) NSMutableArray *notifications;
+//get original positions for items for reference
+@property(nonatomic, assign) int iconX;
+@property(nonatomic, assign) int iconY;
+@property(nonatomic, assign) int notificationLabelX;
+@property(nonatomic, assign) int notificationLabelY;
+@property(nonatomic, assign) int timeLabelX;
+@property(nonatomic, assign) int timeLabelY; //<--- this gets janky if we dynamically get it
 @end
 
 @implementation TableViewController
@@ -42,12 +49,22 @@
     self.navigationController.navigationBar.titleTextAttributes = textAttributes;
     self.navigationController.navigationBar.barStyle = UIStatusBarStyleLightContent;  //set bar style to white
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
-    UIBarButtonItem *shareItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:nil];
-    NSArray *actionButtonItems = @[shareItem];
-    self.navigationItem.rightBarButtonItems = actionButtonItems;
-    
+    UIBarButtonItem *searchButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch target:self action:nil];
+   
+    UIImage *diveBarImage = [UIImage imageNamed:@"i_navbar_divebar.png"];
+    UIBarButtonItem *diveBarButton = [[UIBarButtonItem alloc] initWithImage:diveBarImage style:UIBarButtonItemStylePlain target:self action:nil];
+    self.navigationItem.rightBarButtonItem = diveBarButton;
+    self.navigationItem.leftBarButtonItem = searchButton;
     
     self.cellHeight = 80;
+    
+    //get original positions for items for reference
+    self.iconX = 86;
+    self.iconY = 55;
+    self.notificationLabelX = 86;
+    self.notificationLabelY = 0;
+    self.timeLabelX = 110;
+    self.timeLabelY = 52; //<--- this gets janky if we dynamically get it
     
     //create reference to the notifications
     self.notifications = [NotificationModel notificationDetails ];
@@ -121,13 +138,7 @@
     UIImage *iconImage = [UIImage imageNamed:notification.notificationIconURL];
     [ cell.notificationIcon setImage:iconImage];
     
-    //get original positions for items for reference
-    int iconX = cell.notificationIcon.frame.origin.x;
-    int iconY = cell.notificationIcon.frame.origin.y;
-    int notificationLabelX = cell.notificationLabel.frame.origin.x;
-    int notificationLabelY = cell.notificationLabel.frame.origin.y;
-    int timeLabelX = cell.timeLabel.frame.origin.x;
-    int timeLabelY = 52; //<--- this gets janky if we dynamically get it
+
     
   
     //SIZE TO FIT NOTIFICATION LABEL
@@ -142,12 +153,13 @@
    
     //do adjustments based on number of lines, there is some weirdness going on here
     if( numLines < 3 ){
-        cell.notificationLabel.frame = CGRectMake( notificationLabelX, notificationLabelY,  225, 50);
-        cell.timeLabel.frame = CGRectMake( timeLabelX, timeLabelY - 15,  225, 50);
+        cell.notificationLabel.frame = CGRectMake( self.notificationLabelX, self.notificationLabelY,  225, 50);
+        cell.timeLabel.frame = CGRectMake( self.timeLabelX, self.timeLabelY - 15,  225, 50);
+        cell.notificationIcon.frame  = CGRectMake( self.iconX, self.iconY,  16, 16);
     } else {
-        cell.notificationIcon.frame  = CGRectMake( iconX, iconY + 3,  16, 16);
-        cell.timeLabel.frame = CGRectMake( timeLabelX, timeLabelY - 12,  225, 50);
-        cell.notificationLabel.frame = CGRectMake( notificationLabelX, notificationLabelY + 3,  225, 50);
+        cell.notificationIcon.frame  = CGRectMake( self.iconX, self.iconY + 3,  16, 16);
+        cell.timeLabel.frame = CGRectMake( self.timeLabelX, self.timeLabelY - 12,  225, 50);
+        cell.notificationLabel.frame = CGRectMake( self.notificationLabelX, self.notificationLabelY + 3,  225, 50);
     }
    
     return cell;

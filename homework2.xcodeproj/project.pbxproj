@@ -31,6 +31,9 @@
 		DEA450E118BAFC28001BEC81 /* profileImage1.png in Resources */ = {isa = PBXBuildFile; fileRef = DEA450E018BAFC28001BEC81 /* profileImage1.png */; };
 		DEA450E318BB1B81001BEC81 /* profileImage4.png in Resources */ = {isa = PBXBuildFile; fileRef = DEA450E218BB1B81001BEC81 /* profileImage4.png */; };
 		DEA450E518BB1C59001BEC81 /* profileImage5.png in Resources */ = {isa = PBXBuildFile; fileRef = DEA450E418BB1C58001BEC81 /* profileImage5.png */; };
+		DEA450E718BB235F001BEC81 /* i_navbar_divebar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DEA450E618BB235F001BEC81 /* i_navbar_divebar@2x.png */; };
+		DEA450E918BB3265001BEC81 /* i_tab_notifications@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DEA450E818BB3265001BEC81 /* i_tab_notifications@2x.png */; };
+		DEA450EB18BB329F001BEC81 /* i_tab_notifications_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DEA450EA18BB329F001BEC81 /* i_tab_notifications_selected@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +78,9 @@
 		DEA450E018BAFC28001BEC81 /* profileImage1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profileImage1.png; sourceTree = "<group>"; };
 		DEA450E218BB1B81001BEC81 /* profileImage4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profileImage4.png; sourceTree = "<group>"; };
 		DEA450E418BB1C58001BEC81 /* profileImage5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profileImage5.png; sourceTree = "<group>"; };
+		DEA450E618BB235F001BEC81 /* i_navbar_divebar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "i_navbar_divebar@2x.png"; sourceTree = "<group>"; };
+		DEA450E818BB3265001BEC81 /* i_tab_notifications@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "i_tab_notifications@2x.png"; sourceTree = "<group>"; };
+		DEA450EA18BB329F001BEC81 /* i_tab_notifications_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "i_tab_notifications_selected@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +187,9 @@
 		DEA450D518BAE2F5001BEC81 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				DEA450EA18BB329F001BEC81 /* i_tab_notifications_selected@2x.png */,
+				DEA450E818BB3265001BEC81 /* i_tab_notifications@2x.png */,
+				DEA450E618BB235F001BEC81 /* i_navbar_divebar@2x.png */,
 				DEA450E218BB1B81001BEC81 /* profileImage4.png */,
 				DEA450E418BB1C58001BEC81 /* profileImage5.png */,
 				DEA450DE18BAF6DF001BEC81 /* icon-group-sunglasses-16px@2x.png */,
@@ -278,6 +287,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEA450E318BB1B81001BEC81 /* profileImage4.png in Resources */,
+				DEA450E918BB3265001BEC81 /* i_tab_notifications@2x.png in Resources */,
+				DEA450EB18BB329F001BEC81 /* i_tab_notifications_selected@2x.png in Resources */,
 				DEA450DF18BAF6DF001BEC81 /* icon-group-sunglasses-16px@2x.png in Resources */,
 				DEA450CE18BAD91B001BEC81 /* CustomCell.xib in Resources */,
 				DEA450DD18BAF6C9001BEC81 /* icon-like-16px@2x.png in Resources */,
@@ -287,6 +298,7 @@
 				DEA450DB18BAF6A4001BEC81 /* icon-comment-16px@2x.png in Resources */,
 				DEA450E518BB1C59001BEC81 /* profileImage5.png in Resources */,
 				DEA450AB18BAD724001BEC81 /* Images.xcassets in Resources */,
+				DEA450E718BB235F001BEC81 /* i_navbar_divebar@2x.png in Resources */,
 				DEA450D318BAE2E4001BEC81 /* profileImage2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -18,7 +18,15 @@
     TableViewController *tableViewController = [[TableViewController alloc] init];
     UINavigationController *navigationViewController = [[UINavigationController alloc] initWithRootViewController:tableViewController];
     
-    self.window.rootViewController = navigationViewController;
+
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    tabBarController.viewControllers = @[navigationViewController];
+    
+    [[tabBarController.tabBar.items objectAtIndex:0] setFinishedSelectedImage:[UIImage imageNamed:@"i_tab_notifications_selected.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"i_tab_notifications.png"] ];
+    [[tabBarController.tabBar.items objectAtIndex:0]setTitle:@"Notifications"];
+    
+
+    self.window.rootViewController = tabBarController;
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];

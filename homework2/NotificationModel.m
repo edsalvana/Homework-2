@@ -23,6 +23,8 @@
 
 + (NSMutableArray *)notificationDetails {
     
+    const int numberOfNotifications = 30;
+    
     //create a list of notifications
     NSMutableArray *notifications = [[NSMutableArray alloc] init];
     
@@ -64,7 +66,7 @@
                               ];
     
     //create random notifications
-    for( int i = 0; i < 12; i++){
+    for( int i = 0; i < numberOfNotifications; i++){
         notificationData = @{@"profileImageURL"     : [profileImages objectAtIndex: arc4random() % [profileImages count] ],
                              @"notificationMessage" : [messages objectAtIndex:      arc4random() % [messages count] ],
                              @"notificationTime"    : [time objectAtIndex:          arc4random() % [time count] ],
